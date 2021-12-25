@@ -28,10 +28,35 @@ $("#4").val(localStorage.getItem("4:00pm"));
 $("#5").val(localStorage.getItem("5:00pm"));
 
 
+// add color
+let current = moment().format("HH");
+// var listedTime = $(".time").text.split(":"[0]);
+// console.log(listedTime);
 
-let current = moment().format("HH")
+if (current === 8) {
+    $("#8").addClass("present");
+}
+else if (current < 8) {
+    $("#8").addClass("future");
+}
+else{
+    $("#8").addClass("past");
+
+}
+
+//if current time is equal to the time block time, present 
+
+//if current time is less than the time block time, future
+
+//if current time is past the time block time, past 
+
+
+
+// $(".time").siblings(".description").addClass("present");
+
 console.log(current);
+
+
 
 // time =  ".time".split(":")[0];
 // if (current = time[0]) {
-    $(".time").siblings(".description").addClass("present");
