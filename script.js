@@ -26,3 +26,12 @@ $("#2").val(localStorage.getItem("2:00pm"));
 $("#3").val(localStorage.getItem("3:00pm"));
 $("#4").val(localStorage.getItem("4:00pm"));
 $("#5").val(localStorage.getItem("5:00pm"));
+
+
+
+let current = moment().format("HH")
+console.log(current);
+
+// time =  ".time".split(":")[0];
+// if (current = time[0]) {
+    $(".time").siblings(".description").addClass("present");
