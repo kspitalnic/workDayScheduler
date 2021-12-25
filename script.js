@@ -29,9 +29,8 @@ $("#5").val(localStorage.getItem("5:00pm"));
 
 
 // add color
-let current = moment().format("HH");
-// var listedTime = $(".time").text.split(":"[0]);
-// console.log(listedTime);
+let current = parseInt(moment().format("HH"));
+
 
 if (current === 8) {
     $("#8").addClass("present");
@@ -41,22 +40,108 @@ else if (current < 8) {
 }
 else{
     $("#8").addClass("past");
-
+}
+if (current === 9) {
+    $("#9").addClass("present");
+}
+else if (current < 9) {
+    $("#9").addClass("future");
+}
+else{
+    $("#9").addClass("past");
+}
+if (current === 10) {
+    $("#10").addClass("present");
+}
+else if (current < 10) {
+    $("#10").addClass("future");
+}
+else{
+    $("#10").addClass("past");
+}
+if (current === 11) {
+    $("#11").addClass("present");
+}
+else if (current < 11) {
+    $("#11").addClass("future");
+}
+else{
+    $("#11").addClass("past");
+}
+if (current === 12) {
+    $("#12").addClass("present");
+}
+else if (current < 12) {
+    $("#12").addClass("future");
+}
+else{
+    $("#12").addClass("past");
+}
+if (current === 13) {
+    $("#1").addClass("present");
+}
+else if (current < 13) {
+    $("#1").addClass("future");
+}
+else{
+    $("#1").addClass("past");
+}
+if (current === 14) {
+    $("#2").addClass("present");
+}
+else if (current < 14) {
+    $("#2").addClass("future");
+}
+else{
+    $("#2").addClass("past");
+}
+if (current === 15) {
+    $("#3").addClass("present");
+}
+else if (current < 15) {
+    $("#3").addClass("future");
+}
+else{
+    $("#3").addClass("past");
+}
+if (current === 16) {
+    $("#4").addClass("present");
+}
+else if (current < 16) {
+    $("#4").addClass("future");
+}
+else{
+    $("#4").addClass("past");
+}
+if (current === 17) {
+    $("#5").addClass("present");
+}
+else if (current < 17) {
+    $("#5").addClass("future");
+}
+else{
+    $("#5").addClass("past");
 }
 
-//if current time is equal to the time block time, present 
 
-//if current time is less than the time block time, future
-
-//if current time is past the time block time, past 
-
-
-
-// $(".time").siblings(".description").addClass("present");
 
 console.log(current);
 
 
 
-// time =  ".time".split(":")[0];
-// if (current = time[0]) {
+
+
+
+
+
+// if ($(".time").attr("id")===current){
+//     console.log("true");}
+    // $(this).addClass("present")
+
+// var listedTime = ".time".text.split(":"[0]);
+// console.log(listedTime);
+// $(".time").each(function(){
+//     console.log($(this).text.split(":")[0]);
+//     if ($(".time").attr("id")===current){
+//         console.log("true");}
+//     else {console.log("false")}
