@@ -7,8 +7,6 @@ $(".saveBtn").click(function (event) {
     
     var atime = $(this).siblings(".time").text();
     console.log(atime);
-    var atime = JSON.stringify(atime);
-    console.log(atime);
     var content = $(this).siblings(".description").val();
     console.log(content);
     
